@@ -1,0 +1,36 @@
+.button {
+  padding: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: $color-base-white;
+  background-color: $color-secondary;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 1px solid $color-active;
+  border: none;
+  color: $color-active;
+  background-color: $color-base-white;
+}
+
+.button:focus {
+  color: $color-active;
+  background-color: $color-base-white;
+  outline: none;
+}
+
+.button:active {
+  background-color: $color-active;
+  color: $color-base-white;
+}
+
+.button:disabled {
+  background-color: $color-disabled;
+  color: $color-base-white;
+}

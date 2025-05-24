@@ -1,0 +1,239 @@
+.footer-main {
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+}
+
+.footer-main__wrapper {
+  @include wrapper-size;
+
+  padding: 22px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 34px 45px 20px;
+    gap: 34px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 31px 120px;
+    gap: 22px;
+  }
+}
+
+.footer-main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+  }
+}
+
+.footer-main__logo-wrapper {
+  align-self: center;
+  width: 142px;
+  height: 42px;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 60px;
+  }
+}
+
+.footer-main__logo {
+  text-decoration: none;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 60px;
+    padding: 9px 29px;
+  }
+}
+
+.footer-main__logo img {
+  width: 142px;
+  height: 42px;
+}
+
+.footer-main__logo:hover,
+.footer-main__logo:focus {
+  opacity: 0.8;
+}
+
+.footer-main__logo:active {
+  opacity: 0.5;
+}
+
+.footer-main__list {
+  @include list-reset;
+
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-template-rows: repeat(3, min-width);
+  gap: 50px;
+  row-gap: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 100%;
+    gap: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    width: 800px;
+    justify-content: center;
+  }
+}
+
+.footer-main__item {
+  width: 120px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.footer-main__item:nth-child(2) {
+  grid-column: 1/1;
+  grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/1;
+  }
+}
+
+.footer-main__item:nth-child(3) {
+  grid-column: 1/1;
+  grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/1;
+  }
+}
+
+.footer-main__link {
+  display: block;
+  color: $color-base-black;
+  text-decoration: none;
+  width: 120px;
+  padding: 5px 0;
+  position: relative;
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    right: -5px;
+    bottom: 0;
+    left: -5px;
+    height: 1px;
+    background-color: $color-base-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    max-width: 494px;
+  }
+}
+
+.footer-main__link:hover {
+  &::after {
+    display: block;
+  }
+}
+
+.footer-main__link:focus {
+  outline: 1px solid $color-base-black;
+  outline-offset: 5px;
+}
+
+.footer-main__link:active {
+  color: $color-active;
+}
+
+.footer-main__link[disabled] {
+  color: $color-disabled;
+  pointer-events: none;
+}
+
+.footer-main__social {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.footer-main__privacy-policy {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  color: $color-base-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.footer-main__contacts-phone {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    width: 200px;
+    text-decoration: none;
+    text-align: right;
+    color: $color-base-black;
+    padding-left: 29px;
+    align-self: center;
+  }
+}
+
+.footer-main__contacts-phone:hover,
+.footer-main__privacy-policy:hover {
+  color: $color-secondary;
+  opacity: 0.1;
+}
+
+.footer-main__contacts-phone:focus,
+.footer-main__privacy-policy:focus {
+  outline: none;
+  color: $color-secondary;
+}
+
+.footer-main__contacts-phone:active,
+.footer-main__privacy-policy:active {
+  color: $color-active;
+}
+
+.footer-main__contacts-phone[disabled],
+.footer-main__privacy-policy[disabled] {
+  color: $color-disabled;
+  pointer-events: none;
+}
