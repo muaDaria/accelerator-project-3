@@ -1,15 +1,32 @@
 .button {
-  padding: 20px;
-  font-family: "Montserrat", "Arial", sans-serif;
+  padding: 16px 59px 16px 21px ;
+  font-family: "Manrope", "Arial", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  outline: 1px solid $color-secondary;
+  border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  color: $color-base-white;
-  background-color: $color-secondary;
+  text-transform: uppercase;
+  color: $color-secondary;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    right: -5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .button:hover {
