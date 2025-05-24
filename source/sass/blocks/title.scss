@@ -1,36 +1,18 @@
 .title {
   margin: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 800;
-  font-size: 22px;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 100%;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: attr(data-title);
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 100%;
-    color: $color-base-black;
-    opacity: 0.03;
-    top: 0;
-  }
+  color: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    font-size: 25px;
-
-    &::before {
-      font-size: 40px;
-    }
+    font-size: 34px;
+    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 35px;
-
-    &::before {
-      font-size: 55px;
-      top: 7px;
-    }
+    font-size: 50px;
+    line-height: 100%;
   }
 }
