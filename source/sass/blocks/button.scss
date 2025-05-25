@@ -1,11 +1,12 @@
 .button {
-  padding: 16px 59px 16px 21px ;
+  padding: 16px 59px 16px 21px;
   font-family: "Manrope", "Arial", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.02em;
   outline: 1px solid $color-secondary;
+  outline-offset: -1px;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
@@ -23,9 +24,25 @@
     height: 34px;
     border-radius: 50%;
     background-color: $color-secondary;
-    right: -5px;
+    right: -13px;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: 8px 8px;
+    mask-position: center;
+    background-color: $color-background;
+    right: 1px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
   }
 }
 
