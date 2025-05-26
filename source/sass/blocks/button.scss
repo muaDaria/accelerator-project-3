@@ -44,6 +44,19 @@
     transform: translate(-50%, -50%);
     z-index: 2;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 81px 21px 31px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::before {
+      right: 12px;
+    }
+  }
 }
 
 .button:hover {
