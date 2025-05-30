@@ -15,4 +15,8 @@
   line-height: 20px;
   color: $color-base-black;
   background-color: $color-base-white;
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
 }

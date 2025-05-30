@@ -1,5 +1,6 @@
 .reviews__wrapper {
   @include wrapper-size;
+  overflow: hidden;
 
   padding: 20px 15px;
 
@@ -28,7 +29,7 @@
     margin-bottom: 28px;
   }
 }
-
+/*
 .reviews__container {
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   position: relative;
@@ -225,3 +226,4 @@
 .reviews__image-wrapper img {
   display: block;
 }
+*/

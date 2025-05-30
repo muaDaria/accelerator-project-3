@@ -1,21 +1,19 @@
 .about__wrapper {
-  padding: 20px 0;
+  @include wrapper-size;
+
+  padding: 20px 15px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    padding: 40px 48px 40px 0;
-    display: grid;
-    grid-template-columns: 450px 270px;
-    justify-content: center;
-    gap: 0;
+    width: $tablet-width;
+    padding: 40px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 120px 100px 0;
-    grid-template-columns: repeat(2, 660px);
+    width: $desktop-width;
+    padding: 100px 120px 77px;
   }
 }
-
+/*
 .about__image-wrapper {
   width: 320px;
   height: 400px;
@@ -181,3 +179,4 @@
 .about__content p:not(:last-child) {
   margin-bottom: 8px;
 }
+*/

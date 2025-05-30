@@ -1,4 +1,4 @@
-.contacts {
+/*.contacts {
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -8,8 +8,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
-}
-
+}*/
+/*
 .contacts__container {
   @media (min-width: $desktop-width) {
     width: $desktop-width;
@@ -19,7 +19,7 @@
     grid-template-columns: 580px 600px;
     gap: 20px;
   }
-}
+}*/
 
 .contacts__wrapper {
   @include wrapper-size;
@@ -28,7 +28,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    //width: $tablet-width;
     padding: 40px 45px;
   }
 

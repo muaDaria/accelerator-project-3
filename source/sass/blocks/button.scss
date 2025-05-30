@@ -47,14 +47,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 21px 81px 21px 31px;
+    font-size: 14px;
 
     &::after {
       width: 46px;
       height: 46px;
+      right: -18px;
     }
 
     &::before {
-      right: 12px;
+      right: 8px;
     }
   }
 }

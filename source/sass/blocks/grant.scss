@@ -1,0 +1,18 @@
+.grant__wrapper {
+  @include wrapper-size;
+
+  padding: 177px 31px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 186px 204px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 296px 40px 292px;
+  }
+}

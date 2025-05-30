@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 42px 120px 42px 152px;
+    padding: 32px 100px 0 100px;
   }
 }
 
@@ -80,10 +80,6 @@
 
 .header--closed .header__nav {
   display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
 }
 
 .header--opened .header__nav {
@@ -138,15 +134,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    justify-content: center;
-    padding: 0;
-    gap: 30px;
-    row-gap: 10px;
-    max-width: 802px;
-    padding-left: 35px;
+
   }
 }
 
