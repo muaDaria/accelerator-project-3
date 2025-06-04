@@ -39,9 +39,12 @@
     mask-size: 8px 8px;
     mask-position: center;
     background-color: $color-background;
-    right: 1px;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    will-change: transform;
     z-index: 2;
   }
 
@@ -62,24 +65,68 @@
 }
 
 .button:hover {
-  outline: 1px solid $color-active;
   border: none;
-  color: $color-active;
-  background-color: $color-base-white;
+  color: $color-background;
+  background-color: $color-secondary;
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
 }
 
 .button:focus {
-  color: $color-active;
-  background-color: $color-base-white;
-  outline: none;
+  &::before {
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
 }
 
 .button:active {
-  background-color: $color-active;
-  color: $color-base-white;
+  background-color: $color-secondary;
+  color: rgba(255, 255, 255, 0.7);
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0.7;
+  }
 }
 
 .button:disabled {
-  background-color: $color-disabled;
-  color: $color-base-white;
+  outline: 1px solid $color-disabled;
+  color: $color-disabled;
+  background-color: transparent;
+
+  &::after {
+    background-color: $color-disabled;
+  }
+
+  &::before {
+    background-color: $color-background;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 }
+
+/*
+.hero__button[disabled] {
+  color: $color-disabled;
+  pointer-events: none;
+  outline: 1px solid $color-disabled;
+
+  &::after {
+    background-color: $color-disabled;
+  }
+}
+*/

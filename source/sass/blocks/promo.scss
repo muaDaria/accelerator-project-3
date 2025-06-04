@@ -181,18 +181,19 @@
   }
 }
 
-.hero__button[disabled] {
+.promo__button[disabled] {
   color: $color-disabled;
   pointer-events: none;
+  outline: 1px solid $color-disabled;
+
+  &::after {
+    background-color: $color-disabled;
+  }
 }
 
 .promo__pagination {
   position: relative;
   z-index: 10;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .promo__pagination-horizontal {

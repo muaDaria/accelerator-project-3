@@ -5,3 +5,4 @@
 
 //import './nav.js';
 import './promo-slider.js';
+import './programs-slider.js';
