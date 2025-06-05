@@ -1,3 +1,9 @@
+.programs {
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  }
+}
+
 .programs__wrapper {
   @include wrapper-size;
 
@@ -9,6 +15,8 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 50px 45px;
+    gap: 40px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,15 +28,42 @@
 .programs__container {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 62px;
+  }
 }
 
 .programs__title {
-  padding: 5px 60px 5px 0;
+  padding: 6px 60px 4px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 55px 3px 0;
+    max-width: 445px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 100px;
+    max-width: 850px;
+    padding: 6px 55px 4px 0;
+  }
 }
 
 .programs__button-all {
   order: 3;
   width: 205px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 234px;
+    position: absolute;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 100px;
+    margin-top: 2px;
+  }
 }
 
 .programs__button-all[disabled] {
@@ -41,14 +76,27 @@
   }
 }
 
+.programs__swiper {
+  @media (min-width: $tablet-width) {
+    overflow: visible;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+  }
+}
+
 .programs__content.swiper-slide {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
   height: auto;
-  //border-radius: 12px;
-  //background-color: $color-base-white;
+  background-color: $color-base-white;
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .programs__buttons {
@@ -60,13 +108,11 @@
   right: 0;
 
   @media (min-width: $tablet-width) {
-    height: 35px;
-    top: -60px;
-    right: 0;
+    top: 461px;
+    right: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -63px;
   }
 }
 
@@ -88,6 +134,12 @@
     transform: rotate(45deg);
     top: 0;
     background-color: $color-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 0;
+    }
   }
 }
 
@@ -129,7 +181,12 @@
 
   &::before {
     background-color: $color-disabled;
-    //transform: rotate(-135deg);
+  }
+}
+
+.programs__button-next:disabled {
+  &::before {
+    transform: rotate(45deg);
   }
 }
 
@@ -143,14 +200,11 @@
   }
 }
 
-
-
 .programs__image-wrapper {
   grid-column: 1;
   grid-row: 1;
-  //background-color: $color-base-white;
-  //width: 290px;
-  //height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
 
   &::before {
     content: "";
@@ -160,7 +214,7 @@
     right: 0;
     bottom: 0;
     background: $color-overlay-photo;
-    //border-radius: 12px;
+    border-radius: 12px;
     z-index: 1;
   }
 }
@@ -173,15 +227,16 @@
   grid-column: 1;
   grid-row: 1;
   z-index: 2;
-  align-self: end;
-  padding: 150px 10px 18px;
+  padding: 272px 10px 18px;
+  display: grid;
+  grid-template-rows: auto;
 
   @media (min-width: $tablet-width) {
-
+    padding: 285px 20px 10px;
   }
 
   @media (min-width: $desktop-width) {
-
+    padding: 280px 51px 17px 20px;
   }
 }
 
@@ -202,31 +257,38 @@
   --nb-r: 18px;
 
   @media (min-width: $tablet-width) {
-    border-radius: 18px 0 0 0;
-    padding-top: 10px;
-    --nb-w: 80px;
-    --nb-h: 2px;
-    --nb-r: 20px;
+    min-height: 38px;
+    --nb-w: 78px;
+    --nb-r: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    --nb-w: 829px;
-    --nb-h: 2px;
+    min-height: 42px;
+    --nb-w: 103px;
+    --nb-r: 12px;
+    --nb-h: 17px;
   }
 }
 
 .programs__name {
   font-size: 16px;
   line-height: 18px;
-  padding: 16px 18px;
+  padding: 18px 18px 14px;
   max-width: 146px;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 20px;
+    line-height: 14px;
+    max-width: 185px;
+    padding: 18px 18px 14px;
   }
 
   @media (min-width: $desktop-width) {
-
+    font-size: 24px;
+    line-height: 17px;
+    max-width: 210px;
+    padding: 18px 12px 15px 18px;
   }
 }
 
@@ -242,21 +304,10 @@
   background-color: $color-background;
   margin-top: -9px;
   border-radius: 0 12px 12px 12px;
-  padding: 12px 0 15px 18px;
+  padding: 12px 18px 15px 18px;
   --nb-w: 1px;
   --nb-h: 1px;
   --nb-r: 11px;
-
-  @media (min-width: $tablet-width) {
-    --nb-w: 15px;
-    --nb-h: -26px;
-    --nb-r: 26px;
-  }
-
-  @media (min-width: $desktop-width) {
-    --nb-w: 141px;
-    --nb-h: -27px;
-  }
 }
 
 .programs__container-nebo--text p {
@@ -264,6 +315,17 @@
   max-width: 188px;
   font-size: 12px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+    max-width: 239px;
+  }
 }
 
 .programs__button-more {
@@ -303,4 +365,32 @@
   &::after {
     background-color: $color-disabled;
   }
+}
+
+.programs__scrollbar {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+    right: 115px;
+    height: 2px;
+    z-index: 5;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+}
+
+.programs__scrollbar .swiper-scrollbar-drag {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background-color: $color-secondary;
+    z-index: 10;
+    height: 2px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.programs__scrollbar:hover,
+.programs__scrollbar:focus {
+  opacity: 0.7;
 }

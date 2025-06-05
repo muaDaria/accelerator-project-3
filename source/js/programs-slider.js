@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
+import { Scrollbar } from 'swiper/modules';
 
 const initSliderPrograms = () => {
   const sliderElement = document.querySelector('.programs__swiper');
@@ -8,7 +9,7 @@ const initSliderPrograms = () => {
   }
 
   new Swiper('.programs__swiper',{
-    modules: [Navigation],
+    modules: [Navigation, Scrollbar],
 
     direction: 'horizontal',
     loop: false,
@@ -24,6 +25,11 @@ const initSliderPrograms = () => {
       prevEl: '.programs__button-prev',
     },
 
+    scrollbar: {
+      el: '.programs__scrollbar',
+      draggable: true,
+    },
+
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -31,11 +37,11 @@ const initSliderPrograms = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 18,
+        spaceBetween: 30,
       },
       1440: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 32,
       }
     }
   });
