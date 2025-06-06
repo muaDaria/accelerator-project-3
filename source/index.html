@@ -377,23 +377,23 @@
           <div class="grant__container">
             <h2 class="grant__title title">Как поехать</h2>
             <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-            <div class="grant__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"  width="258" height="253" srcset="img/reviews/slide-desktop1@1x.webp 1x, img/reviews/slide-desktop1@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" width="186" height="237" srcset="img/reviews/slide-tablet1@1x.webp 1x, img/reviews/slide-tablet1@2x.webp 2x">
-                <source type="image/webp"  width="250" height="169" srcset="img/reviews/slide-mobile1@1x.webp 1x, img/reviews/slide-mobile1@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="258" height="253" type="image/jpeg" srcset="img/reviews/slide-desktop1@1x.jpg 1x, img/reviews/slide-desctop1@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="186" height="237" type="image/jpeg" srcset="img/reviews/slide-tablet1@1x.jpg 1x, img/reviews/slide-tablet1@2x.jpg 2x">
-                <img src="img/reviews/slide-mobile1@1x.jpg" width="250" height="169" srcset="img/reviews/slide-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-              </picture>
-            </div>
           </div>
-          <div class="grant__container">
-            <h2 class="grant__title title">Чтобы получить грант на обучение, вам нужно:</h2>
+          <div class="grant__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"  width="498" height="363" srcset="img/grant/grant-desktop@1x.webp 1x, img/grant/grant-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="678" height="375" srcset="img/grant/grant-tablet@1x.webp 1x, img/grant/grant-tablet@2x.webp 2x">
+              <source type="image/webp"  width="290" height="200" srcset="img/grant/grant-mobile@1x.webp 1x, img/grant/grant-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="498" height="363" type="image/jpeg" srcset="img/grant/grant-desktop@1x.jpg 1x, img/grant/grant-desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="678" height="375" type="image/jpeg" srcset="img/grant/grant-tablet@1x.jpg 1x, img/grant/grant-tablet@2x.jpg 2x">
+              <img src="img/grant/grant-mobile@1x.jpg" width="290" height="200" srcset="img/grant/grant-mobile@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
+            </picture>
+          </div>
+          <div class="grant__list-container">
+            <h3 class="grant__list-title title">Чтобы получить грант на обучение, вам нужно:</h3>
             <ul class="grant__list">
               <li class="grant__item">Быть в возрасте от 16 до 30 лет</li>
               <li class="grant__item">Иметь оконченное среднее образование</li>
-              <li class="grant__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="grant__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
               <li class="grant__item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</li>
             </ul>
           </div>
@@ -593,11 +593,11 @@
             <form class="form__group" action="https://echo.htmlacademy.ru" method="post">
               <div class="form__content">
                 <label for="name">Имя</label>
-                  <input class="form__field form__field--name" aria-label="Имя" type="text" id="name" name="name" required>
+                  <input class="form__field form__field--name" type="text" id="name" name="name" required>
               </div>
               <div class="form__content">
                 <label for="phone">Телефон</label>
-                  <input class="form__field form__field--phone" aria-label="Телефон" type="tel" id="phone" name="phone" required>
+                  <input class="form__field form__field--phone" type="tel" id="phone" name="phone" required>
               </div>
               <div class="form__content">
                 <label for="comment">Ваше сообщение</label>
@@ -606,7 +606,7 @@
               <div class="form__content">
                 <label for="city-select">Выберите город</label>
                 <select name="city" id="city-select" required>
-                  <option value=""></option>
+                  <option value="" label=" "></option>
                   <option value="petersburg">Санкт-Петербург</option>
                   <option value="petersburg">Санкт-Петербург</option>
                   <option value="petersburg">Санкт-Петербург</option>
@@ -615,7 +615,7 @@
               </div>
               <div class="form__content">
                 <label for="agreement">Я согласен на обработку моих персональных данных</label>
-                <input class="form__control" type="checkbox" id="agreement" required>
+                <input class="form__control" type="checkbox" id="agreement" name="agreement" required>
               </div>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
@@ -665,7 +665,7 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg width="16" height="9" fill="#030A1A" role="img">
                   <use href="/__spritemap#sprite-vk"></use>
@@ -673,7 +673,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://ok.ru" target="_blank">
+              <a class="social__link" href="https://ok.ru" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в Одноклассниках</span>
                 <svg width="9" height="16" fill="#030A1A" role="img">
                   <use href="/__spritemap#sprite-odnoklassniki"></use>
@@ -681,7 +681,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.reddit.com" target="_blank">
+              <a class="social__link" href="https://www.reddit.com" target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Мы в Реддит</span>
                 <svg  width="14" height="15" fill="#030A1A" role="img">
                   <use href="/__spritemap#sprite-reddit"></use>
