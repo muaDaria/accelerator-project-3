@@ -6,3 +6,4 @@
 //import './nav.js';
 import './promo-slider.js';
 import './programs-slider.js';
+import './news-slider.js';

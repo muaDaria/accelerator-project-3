@@ -406,8 +406,8 @@
           <div class="news__container">
 
             <ul class="news__filter-list">
-              <li class="news__filter-item">
-                <button class="news__filter-button button" type="button">Общее</button>
+              <li class="news__filter-item news__filter-item">
+                <button class="news__filter-button news__filter-button--active button" type="button">Общее</button>
               </li>
               <li class="news__filter-item">
                 <button class="news__filter-button button" type="button">Волонтёрство</button>
@@ -426,29 +426,141 @@
             <div class="news__swiper swiper">
               <div class="news__slider swiper-wrapper">
                 <div class="news__content swiper-slide">
-                  <div class="news__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"  width="258" height="253" srcset="img/reviews/slide-desktop1@1x.webp 1x, img/reviews/slide-desktop1@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)" width="186" height="237" srcset="img/reviews/slide-tablet1@1x.webp 1x, img/reviews/slide-tablet1@2x.webp 2x">
-                      <source type="image/webp"  width="250" height="169" srcset="img/reviews/slide-mobile1@1x.webp 1x, img/reviews/slide-mobile1@2x.webp 2x">
-                      <source media="(min-width: 1440px)" width="258" height="253" type="image/jpeg" srcset="img/reviews/slide-desktop1@1x.jpg 1x, img/reviews/slide-desctop1@2x.jpg 2x">
-                      <source media="(min-width: 768px)" width="186" height="237" type="image/jpeg" srcset="img/reviews/slide-tablet1@1x.jpg 1x, img/reviews/slide-tablet1@2x.jpg 2x">
-                      <img src="img/reviews/slide-mobile1@1x.jpg" width="250" height="169" srcset="img/reviews/slide-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-                    </picture>
-                  </div>
-                  <time class="news__date" datetime="2023-03-23">23/03/2023</time>
-                  <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
-                  <div class="news__description">
-                    <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                    <a class="visually-hidden news__buttom button" href="#">Подробнее</a>
+                  <div class="news__wrapper-slide">
+                    <div class="news__nebo-container nebo nebo--bl">
+                      <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
+                          <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
+                          <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
+                          <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
+                          <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="news__description">
+                      <div class="news__nebo news__nebo--date nebo nebo--tr">
+                        <time class="news__date" datetime="2023-03-23">23/03/2023</time>
+                      </div>
+                      <div class="news__nebo news__nebo--name nebo nebo--tr">
+                        <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
+                        </div>
+                      <div class="news__nebo news__nebo--text">
+                        <div class="news__text-wrapper">
+                          <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                        </div>
+                        <a class="news__buttom-more button" href="#">
+                          <span class="visually-hidden">Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="news__content swiper-slide">
+                  <div class="news__wrapper-slide">
+                  <div class="news__nebo-container nebo nebo--bl">
+                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
+                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
+                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
+                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <div class="news__nebo news__nebo--date nebo nebo--tr">
+                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
+                    </div>
+                    <div class="news__nebo news__nebo--name nebo nebo--tr">
+                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
+                      </div>
+                    <div class="news__nebo news__nebo--text">
+                      <div class="news__text-wrapper">
+                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      </div>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="news__content swiper-slide">
+                  <div class="news__wrapper-slide">
+                  <div class="news__nebo-container nebo nebo--bl">
+                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
+                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
+                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
+                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <div class="news__nebo news__nebo--date nebo nebo--tr">
+                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
+                    </div>
+                    <div class="news__nebo news__nebo--name nebo nebo--tr">
+                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
+                      </div>
+                    <div class="news__nebo news__nebo--text">
+                      <div class="news__text-wrapper">
+                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      </div>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="news__content swiper-slide">
+                  <div class="news__wrapper-slide">
+                  <div class="news__nebo-container nebo nebo--bl">
+                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
+                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
+                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
+                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
+                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="news__description">
+                    <div class="news__nebo news__nebo--date nebo nebo--tr">
+                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
+                    </div>
+                    <div class="news__nebo news__nebo--name nebo nebo--tr">
+                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
+                      </div>
+                    <div class="news__nebo news__nebo--text">
+                      <div class="news__text-wrapper">
+                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      </div>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
               <div class="news__pagination swiper-pagination">
                 <button class="news__pagination-arrow news__pagination-arrow-prev button" aria-label="Предыдущий слайд" type="button">←</button>
                 <div class="news__pagination-numbers"></div>
                 <button class="news__pagination-arrow news__pagination-arrow-next button" aria-label="Следующий слайд" type="button">→</button>
               </div>
+
             </div>
           </div>
         </div>
@@ -459,37 +571,59 @@
           <h2 class="faq__title title">Вопросы и ответы</h2>
           <div class="faq__accordion">
             <details class="faq__questions-item">
-              <summary>Кто организатор? Какиесроки у программы?</summary>
+              <summary>
+                <div class="faq__text">
+                  <p>Кто организатор? Какие сроки у программы?</p>
+                </div>
+                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+              </summary>
               <div class="faq__answers">
                 <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
               </div>
             </details>
             <details class="faq__questions-item">
-              <summary>Что такое грант на обучение?</summary>
+              <summary>
+                <div class="faq__text">
+                  <p>Что такое грант на обучение?</p>
+                </div>
+                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+              </summary>
               <div class="faq__answers">
                 <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
               </div>
             </details>
             <details class="faq__questions-item" open>
-              <summary>Как определяется стоимость программы?</summary>
+              <summary>
+                <div class="faq__text">
+                  <p>Как определяется стоимость программы?</p>
+                </div>
+                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+              </summary>
               <div class="faq__answers">
-                <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка» не покрывает полную стоимость
-                  программы, и поэтому предусматривается определённая доля личного участия.</p>
+                <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка»
+                  не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного участия.</p>
               </div>
             </details>
             <details class="faq__questions-item">
-              <summary>Признаётся ли учёба в рамках проекта для дальнейшего обучения?</summary>
+              <summary>
+                <div class="faq__text">
+                  <p>Признаётся ли учёба в рамках проекта <br>для дальнейшего обучения?</p>
+                </div>
+                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+              </summary>
               <div class="faq__answers">
-                <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение
-                   в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
+                <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
               </div>
             </details>
             <details class="faq__questions-item">
-              <summary>Как выглядит полный процесс регистрации на программу «Стажировка»?</summary>
+              <summary>
+                <div class="faq__text">
+                  <p>Как выглядит полный процесс регистрации на программу «Стажировка»?</p>
+                </div>
+                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+              </summary>
               <div class="faq__answers">
-                <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления
-                  и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора
-                   об участии в программе. Подробнее можно узнать позвонив в центр.</p>
+                <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
               </div>
             </details>
           </div>

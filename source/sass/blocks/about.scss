@@ -117,6 +117,7 @@
 
 .about__list {
   @include list-reset;
+
   padding: 42px 20px 40px;
   display: flex;
   flex-direction: column;

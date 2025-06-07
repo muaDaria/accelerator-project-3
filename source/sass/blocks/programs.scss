@@ -251,19 +251,22 @@
 .programs__container-nebo--title {
   min-height: 42px;
   background-color: $color-background;
-  border-radius: 12px 0 0 0;
+  border-radius: 12px 0 0;
+
   --nb-w: 86px;
   --nb-h: 5px;
   --nb-r: 18px;
 
   @media (min-width: $tablet-width) {
     min-height: 38px;
+
     --nb-w: 78px;
     --nb-r: 16px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 42px;
+
     --nb-w: 103px;
     --nb-r: 12px;
     --nb-h: 17px;
@@ -303,8 +306,9 @@
   gap: 16px;
   background-color: $color-background;
   margin-top: -9px;
-  border-radius: 0 12px 12px 12px;
-  padding: 12px 18px 15px 18px;
+  border-radius: 0 12px 12px;
+  padding: 12px 18px 15px;
+
   --nb-w: 1px;
   --nb-h: 1px;
   --nb-r: 11px;
@@ -352,7 +356,7 @@
   background-color: $color-background;
 }
 
-.programs__button-more:active{
+.programs__button-more:active {
   outline: none;
   background-color: $color-background;
 }
