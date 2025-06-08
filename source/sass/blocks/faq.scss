@@ -107,7 +107,6 @@
     br {
       display: none;
     }
-
   }
 }
 
@@ -124,6 +123,7 @@
   cursor: pointer;
   position: relative;
   align-self: center;
+  display: block;
 
   &::after,
   &::before {
@@ -156,12 +156,12 @@
 
 .faq__answers p {
   margin: 0;
-  color: $color-background;
+  color: $color-base-white;
 }
 
-.faq__button:hover,
-.faq__button:focus {
-  background-color: $color-base-white;
+.faq__questions-item summary:hover .faq__button,
+.faq__questions-item summary:focus .faq__button {
+  background-color: transparent;
   outline: 1px solid $color-secondary;
 
   &::after,
@@ -170,13 +170,27 @@
   }
 }
 
-.faq__button:active {
+.faq__questions-item summary:active .faq__button  {
   background-color: $color-active;
 
   &::after,
   &::before {
     background-color: $color-background;
   }
+}
+
+.faq__questions-item:hover,
+.faq__questions-item:focus,
+.faq__questions-item:focus-visible {
+  background-color: $color-background;
+}
+
+.faq__questions-item:active {
+  background-color: $color-background;
+}
+
+.faq__questions-item:active summary {
+  color: $color-active;
 }
 
 .faq__questions-item[open] summary {
@@ -196,8 +210,8 @@
   }
 }
 
-.faq__questions-item[open] .faq__button:hover,
-.faq__questions-item[open] .faq__button:focus {
+.faq__questions-item[open] summary:hover .faq__button,
+.faq__questions-item[open] summary:focus .faq__button {
   background-color: transparent;
   outline: 1px solid $color-background;
 
@@ -207,13 +221,22 @@
   }
 }
 
-.faq__questions-item[open] .faq__button:active {
-  background-color: $color-background;
+.faq__questions-item[open] summary:active .faq__button {
+  background-color: $color-active;
 
   &::after {
-    background-color: $color-active;
+    background-color: $color-background;
     transform: rotateZ(180deg);
   }
+}
+
+.faq__questions-item[open]:hover,
+.faq__questions-item[open]:focus {
+  background-color: $color-secondary;
+}
+
+.faq__questions-item[open]:active {
+  background-color: $color-active;
 }
 
 .faq__questions-item .faq__button[disabled] {
