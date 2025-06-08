@@ -36,11 +36,11 @@ const initSliderReviews = () => {
         spaceBetween: 15,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 30,
       },
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 32,
       }
     }
