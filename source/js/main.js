@@ -8,3 +8,4 @@ import './promo-slider.js';
 import './programs-slider.js';
 import './news-slider.js';
 import './reviews-slider.js';
+import './form-select.js';
