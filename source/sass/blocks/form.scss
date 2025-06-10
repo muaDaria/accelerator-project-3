@@ -1,9 +1,18 @@
 .form {
   background-color: $color-base-white;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
 }
 
 .form__wrapper {
-  margin: 40px 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   background-color: $color-base-white;
@@ -18,7 +27,13 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-width: $tablet-width) {
+    width: 652px;
+    border-radius: 16px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 1240px;
     background-image:
       image-set(
         url("../../img/form/form-desktop@1x.webp") 1x type("image/webp"),
@@ -38,24 +53,34 @@
   border-radius: 16px;
 
   @media (min-width: $tablet-width) {
-
+    width: 442px;
+    padding: 30px 40px 36px 40px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
+    width: 490px;
+    padding: 30px 70px 39px 70px;
   }
 }
 
 .form__title {
+  font-size: 18px;
+  line-height: 22px;
   color: $color-background;
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px;
+    padding: 11px 0;
+    font-size: 28px;
+    line-height: 100%;
     margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px;
+    padding: 14px 0;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -86,6 +111,10 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
 }
 
 .form__label {
@@ -95,7 +124,8 @@
   color: $color-base-white;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -112,16 +142,16 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding: 19px 30px 18px;
+
   }
 
   @media (min-width: $desktop-width) {
-    width: 360px;
+
   }
 }
 
 .form__text {
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -129,18 +159,23 @@
   border-radius: 8px;
   color: $color-background;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .form__select {
-  padding: 15px 25px;
+  padding: 18px 25px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background-color: transparent;
   appearance: none;
-  /*background-image: url("/__spritemap#sprite-arrow-down-view");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 16px 16px;*/
+  width: 260px;
   position: relative;
 
   &::after {
@@ -157,8 +192,15 @@
     transition: transform 0.3s ease;
     pointer-events: none;
   }
-}
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
 
 .form__option {
   padding: 17px 20px;
@@ -211,6 +253,174 @@
   background-color: $color-active;
 }
 
+.form__select:hover {
+  border: 1px solid $color-background;
+}
+
+
+.form__select:focus,
+.form__select:active {
+  box-shadow: none;
+  border: 1px solid $color-background;
+}
+
+.form__content--agreement {
+  display: grid;
+  grid-template-columns: 20px 240px;
+  grid-auto-rows: auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__content--agreement .form__label {
+  cursor: pointer;
+  user-select: none;
+  opacity: 1;
+  width: 240px;
+  grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    width: 332px;
+    font-size: 12px;
+    line-height: 100%;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form__control {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: 1px solid $color-secondary;
+  border-radius: 2px;
+  background-color: $color-background;
+  position: relative;
+  cursor: pointer;
+  grid-column: 1/2;
+  grid-row: 1/1;
+}
+
+.form__control:checked {
+  background-color: $color-background;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 12px;
+    height: 18px;
+    mask-image: url("/__spritemap#sprite-check-view");
+    mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+    mask-position: center;
+    background-color: $color-secondary;
+  }
+}
+
+.form__control:hover,
+.form__control:focus {
+  outline: 1px solid $color-background;
+  background-color: $color-secondary;
+}
+
+.form__control:disabled {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 1px solid $color-background;
+}
+
+.form__control:checked:hover,
+.form__control:checked:focus {
+  background-color: $color-secondary;
+  outline: 1px solid $color-background;
+
+  &::before {
+    background-color: $color-background;
+  }
+}
+
+.form__control:checked:disabled {
+  background-color: $color-disabled;
+  outline: none;
+
+  &::before {
+    background-color: $color-background;
+  }
+}
+
+.form__button {
+  width: 260px;
+  outline: 1px solid $color-background;
+  color: $color-background;
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 352px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form__button:hover {
+  outline: none;
+  color: $color-secondary;
+  background-color: $color-background;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before {
+    background-color: $color-background;
+  }
+}
+
+.form__button:focus {
+  outline: 1px solid $color-background;
+  color: $color-background;
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+  }
+}
+
+.form__button:active {
+  outline: none;
+  color: rgba(49, 109, 194, 0.7);
+  background-color: $color-background;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before {
+    background-color: $color-background;
+    opacity: 0.7;
+  }
+}
+
 /*
 .form__field:hover {
   outline: 1px solid $color-secondary;
@@ -232,21 +442,5 @@
 
 .form__field:disabled {
   outline: 1px solid $color-disabled;
-}
-
-.form__button {
-  color: $color-base-white;
-  border: none;
-  padding-top: 22px;
-  padding-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-top: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 180px;
-  }
 }
 */

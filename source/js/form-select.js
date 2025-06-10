@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
       arrow.remove();
     }
 
-    formSelect.addEventListener('focus', () => {
-      slim.open();
+    formSelect.addEventListener('focus', (evt) => {
+      if (evt.detail === 0) {
+        slim.open();
+      }
     });
 
     const observer = new MutationObserver(() => {
