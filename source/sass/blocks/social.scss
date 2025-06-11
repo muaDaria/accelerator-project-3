@@ -3,14 +3,14 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     align-self: center;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 15px;
+    gap: 20px;
   }
 }
 
@@ -21,13 +21,36 @@
 }
 
 .social__link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(45, 56, 63, 0.3);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.social__link svg {
+  fill: $color-background;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .social__link:hover {
