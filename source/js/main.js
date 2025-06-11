@@ -9,3 +9,4 @@ import './programs-slider.js';
 import './news-slider.js';
 import './reviews-slider.js';
 import './form-select.js';
+import './form-validation.js';

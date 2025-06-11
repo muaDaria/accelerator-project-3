@@ -1,46 +1,61 @@
 import './vendor/slimselect.js';
 
+const addCustomizations = (wrapper) => {
+  if (!wrapper || !wrapper.classList) {
+    return;
+  }
+  wrapper.setAttribute('tabindex', '0');
+
+  const arrow = wrapper.querySelector('.ss-arrow');
+  if (arrow) {
+    arrow.remove();
+  }
+};
+
+const toggleSelectContentClass = (wrapper) => {
+  const content = document.querySelector('.ss-content');
+  if (!content) {
+    return;
+  }
+
+  const expanded = wrapper.getAttribute('aria-expanded');
+  if (expanded === 'true') {
+    content.classList.add('form__select-open');
+  } else {
+    content.classList.remove('form__select-open');
+  }
+};
+
+const originalRender = window.SlimSelect.prototype.render;
+window.SlimSelect.prototype.render = function (...args) {
+  originalRender.apply(this, args);
+  addCustomizations(this.main);
+};
+
+const originalInit = window.SlimSelect.prototype.init;
+window.SlimSelect.prototype.init = function (...args) {
+  originalInit.apply(this, args);
+  addCustomizations(this.main);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
-  const slim = new window.SlimSelect ({
+  new window.SlimSelect({
     select: '#city-select',
-    cssClasses: {
-      option: 'form__option'
-    },
-    settings: {
-      showSearch: false,
-      hideSelected: true,
-    },
+    cssClasses: { option: 'form__option' },
+    settings: { showSearch: false, hideSelected: true }
   });
 
-  const formSelect = document.querySelector('.ss-main');
-  const content = document.querySelector('.ss-content');
-
-  if (formSelect) {
-    formSelect.classList.add('form__select');
-    formSelect.setAttribute('tabindex', '0');
-
-    const arrow = formSelect.querySelector('.ss-arrow');
-    if (arrow) {
-      arrow.remove();
-    }
-
-    formSelect.addEventListener('focus', (evt) => {
-      if (evt.detail === 0) {
-        slim.open();
-      }
-    });
+  const wrapper = document.querySelector('.ss-main');
+  if (wrapper) {
+    addCustomizations(wrapper);
 
     const observer = new MutationObserver(() => {
-      const expanded = formSelect.getAttribute('aria-expanded');
-      if (expanded === 'true') {
-        content.style.display = 'block';
-        content.classList.add('form__select-open');
-      } else {
-        content.style.display = 'none';
-        content.classList.remove('form__select-open');
-      }
+      toggleSelectContentClass(wrapper);
     });
 
-    observer.observe(formSelect, { attributes: true, attributeFilter: ['aria-expanded'] });
+    observer.observe(wrapper, {
+      attributes: true,
+      attributeFilter: ['aria-expanded']
+    });
   }
 });
