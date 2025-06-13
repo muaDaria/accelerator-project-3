@@ -55,6 +55,7 @@
   line-height: 100%;
   letter-spacing: 0.28px;
   background-color: $color-background;
+  align-self: flex-end;
 
   &::after {
     width: 46px;
@@ -78,6 +79,7 @@
 	text-align: start;
   background-color: $color-secondary;
   color: $color-background;
+  align-self: auto;
 
   &::after {
     background-color: $color-background;

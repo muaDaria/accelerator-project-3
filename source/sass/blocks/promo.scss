@@ -231,32 +231,27 @@
   }
 }
 
-.promo__pagination-bullet--active {
-  background-color: $color-secondary;
+.promo__pagination-bullet:hover,
+.promo__pagination-bullet--active:hover  {
+  background-color: rgba(49, 109, 194, 0.7);
+  border: 2px solid $color-background;
 }
 
-.promo__pagination-bullet:hover,
-.promo__pagination-bullet--active:hover {
-  background-color: #d9d9d9;
+.promo__pagination-bullet--active {
+  background-color: $color-active;
+  border: 2px solid $color-active;
 }
 
 .promo__pagination-bullet:focus {
-  outline: 1px solid rgba(255, 255, 255, 0.5);
-  outline-offset: 2px;
+  background-color: $color-secondary;
 }
 
-.promo__pagination-bullet--active:focus {
-  background-color: transparent;
-  outline: 1px solid rgba(255, 255, 255, 0.5);
-  outline-offset: 2px;
-}
-
-.promo__pagination-bullet:active,
-.promo__pagination-bullet--active:active {
-  background-color: rgba(255, 255, 255, 0.5);
+.promo__pagination-bullet:active {
+  background-color: $color-active;
+  border: 2px solid $color-active;
 }
 
 .promo__pagination-bullet:disabled {
   background-color: $color-disabled;
-  border: 1px solid $color-disabled;
+  border: 2px solid $color-disabled;
 }
