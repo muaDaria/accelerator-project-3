@@ -125,6 +125,7 @@
   color: $color-disabled;
   pointer-events: none;
   outline: 1px solid $color-disabled;
+  cursor: default;
 
   &::after {
     background-color: $color-disabled;

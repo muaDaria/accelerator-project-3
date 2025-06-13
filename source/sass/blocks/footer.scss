@@ -51,10 +51,6 @@
   justify-self: center;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -96,43 +92,7 @@
   color: $color-base-black;
   text-decoration: none;
   position: relative;
-
-  /*&::after {
-    display: none;
-    position: absolute;
-    content: "";
-    right: -5px;
-    bottom: 0;
-    left: -5px;
-    height: 1px;
-    background-color: $color-base-black;
-  }*/
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
-
-/*.footer-main__link:hover {
-  &::after {
-    display: block;
-  }
-}
-
-.footer-main__link:focus {
-  outline: 1px solid $color-base-black;
-  outline-offset: 5px;
-}
-
-.footer-main__link:active {
-  color: $color-active;
-}
-
-.footer-main__link[disabled] {
-  color: $color-disabled;
-  pointer-events: none;
-}
-*/
 
 .footer__container {
   display: flex;
@@ -188,25 +148,6 @@
   }
 }
 
-.footer-main__privacy-policy:hover {
-  color: $color-secondary;
-  opacity: 0.1;
-}
-
-.footer-main__privacy-policy:focus {
-  outline: none;
-  color: $color-secondary;
-}
-
-.footer-main__privacy-policy:active {
-  color: $color-active;
-}
-
-.footer-main__privacy-policy[disabled] {
-  color: $color-disabled;
-  pointer-events: none;
-}
-
 .footer__copyright {
   margin: 0 auto;
   font-size: 12px;
@@ -214,10 +155,6 @@
   opacity: 0.6;
   text-align: center;
   justify-self: center;
-
-  @media (min-width: $tablet-width) {
-
-  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
@@ -240,5 +177,47 @@
     grid-row: 1/2;
     align-self: center;
     justify-self: end;
+  }
+}
+
+.footer__link:hover,
+.footer__privacy-policy:hover {
+  color: $color-secondary;
+  opacity: 0.7;
+
+  &::after {
+    background-color: $color-secondary;
+    opacity: 0.7;
+  }
+}
+
+.footer__link:focus,
+.footer__privacy-policy:focus {
+  color: $color-secondary;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+}
+
+.footer__link:active,
+.footer__privacy-policy:active {
+  color: $color-active;
+  opacity: 1;
+
+  &::after {
+    background-color: $color-active;
+    opacity: 1;
+  }
+}
+
+.footer__link[disabled],
+.footer__privacy-policy[disabled] {
+  color: $color-disabled;
+  pointer-events: none;
+  cursor: default;
+
+  &::after {
+    background-color: $color-disabled;
   }
 }
