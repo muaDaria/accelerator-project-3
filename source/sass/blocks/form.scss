@@ -443,3 +443,72 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+//form--modal
+.form--modal .form__title {
+  line-height: 18px;
+  color: $color-secondary;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form--modal .form__description {
+  text-align: center;
+  margin-bottom: 25px;
+  width: 220px;
+  justify-self: center;
+}
+
+.form--modal .form__group {
+  gap: 15px;
+}
+
+.form--modal .form__content {
+  gap: 8px;
+}
+
+.form--modal .form__label {
+  font-size: 14px;
+  color: $color-base-black;
+  opacity: 0.8;
+}
+
+.form--modal .form__field {
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  padding: 12px 25px;
+  color: $color-base-black;
+}
+
+.form--modal .form__content--agreement .form__label {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.9;
+
+  br {
+    display: none;
+  }
+}
+
+.form--modal .form__content--agreement {
+  grid-template-columns: 20px 230px;
+  gap: 10px;
+}
+
+.form--modal .form__control {
+  background-color: $color-secondary;
+}
+
+.form--modal .form__button {
+  outline: 1px solid $color-secondary;
+  width: 100%;
+  color: $color-secondary;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before {
+    background-color: $color-background;
+  }
+}
