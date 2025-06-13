@@ -107,6 +107,7 @@
   outline: 1px solid $color-disabled;
   color: $color-disabled;
   background-color: transparent;
+  cursor: default;
 
   &::after {
     background-color: $color-disabled;

@@ -7,6 +7,10 @@
   height: 100%;
   background-color: $color-base-black;
   z-index: 30;
-  opacity: 0.6;
+  opacity: 0.4;
   transition: opacity 0.3s ease;
+}
+
+.overlay--active {
+  display: block;
 }

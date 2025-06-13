@@ -15,72 +15,73 @@
 
   <body class="page__body">
     <div class="overlay"></div>
-    <div class="hero" data-test="hero">
-      <header class="header header--closed" data-test="header">
-
-          <div class="header__logo-wrapper">
-            <img src="img/logo.svg" width="30" height="30" alt="Internship">
-          </div>
-          <button class="header__toggle button" type="button">Меню</button>
+    <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Internship</h1>
+      <header class="hero__header header">
+        <div class="header__container">
+        <div class="header__logo-wrapper">
+          <img src="img/logo.svg" width="30" height="30" alt="Internship">
+        </div>
           <nav class="header__nav">
+            <button class="header__toggle button" type="button">Меню</button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#tours">О проекте</a>
+                <a class="header__nav-link header__nav-title" href="#tours">О проекте</a>
               </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#training">Программы</a>
-                <ul class="header__nav-list header__nav-list--secondary">
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Стажировки</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Волонтёрство</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Учеба</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Религия</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#about">Как поехать</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#reviews">Отзывы</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#gallery">Новости</a>
-                <ul class="header__nav-list header__nav-list--secondary">
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Общее</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Волонтёрство</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Стажировки</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Карьера</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a class="header__nav-link" href="#tours">Путешествия</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+              <li class="header__nav-item header__nav-item--dropdown">
+								<button class="header__nav-title" type="button">Программы</button>
+								<ul class="header__nav-sublist">
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Стажировки</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Волонтёрство</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Учёба</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Религия</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link header__nav-title" href="#">Как поехать</a>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link header__nav-title" href="#">Отзывы</a>
+							</li>
+							<li class="header__nav-item header__nav-item--dropdown">
+								<button class="header__nav-title" type="button">Новости</button>
+								<ul class="header__nav-sublist">
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Общее</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Волонтёрство</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Стажировки</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Карьера</a>
+									</li>
+									<li class="header__nav-subitem">
+										<a class="header__nav-link" href="#">Путешествия</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header__nav-item">
+								<a class="header__nav-link header__nav-title">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+        </div>
       </header>
-      <section class="promo">
-        <h1 class="visually-hidden">Internship</h1>
+
+      <div class="hero__promo promo">
         <div class="promo__container">
           <div class="promo__swiper swiper">
-
             <div class="promo__slider swiper-wrapper">
               <div class="promo__content swiper-slide">
                 <div class="promo__image-wrapper">
@@ -153,11 +154,10 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <main>
       <section class="about" data-test="about">
