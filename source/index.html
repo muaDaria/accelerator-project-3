@@ -26,53 +26,53 @@
             <button class="header__toggle button" type="button">Меню</button>
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a class="header__nav-link header__nav-title" href="#tours">О проекте</a>
+                <a class="header__nav-link header__nav-title" href="#about">О проекте</a>
               </li>
               <li class="header__nav-item header__nav-item--dropdown">
 								<button class="header__nav-title" type="button">Программы</button>
 								<ul class="header__nav-sublist">
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Стажировки</a>
+										<a class="header__nav-link" href="#internship">Стажировки</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Волонтёрство</a>
+										<a class="header__nav-link" href="#volunteering">Волонтёрство</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Учёба</a>
+										<a class="header__nav-link" href="#study">Учёба</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Религия</a>
+										<a class="header__nav-link" href="#programs">Религия</a>
 									</li>
 								</ul>
 							</li>
 							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title" href="#">Как поехать</a>
+								<a class="header__nav-link header__nav-title" href="#grant">Как поехать</a>
 							</li>
 							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title" href="#">Отзывы</a>
+								<a class="header__nav-link header__nav-title" href="#reviews">Отзывы</a>
 							</li>
 							<li class="header__nav-item header__nav-item--dropdown">
 								<button class="header__nav-title" type="button">Новости</button>
 								<ul class="header__nav-sublist">
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Общее</a>
+										<a class="header__nav-link" href="#news">Общее</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Волонтёрство</a>
+										<a class="header__nav-link" href="#news">Волонтёрство</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Стажировки</a>
+										<a class="header__nav-link" href="#news">Стажировки</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Карьера</a>
+										<a class="header__nav-link" href="#news">Карьера</a>
 									</li>
 									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#">Путешествия</a>
+										<a class="header__nav-link" href="#news">Путешествия</a>
 									</li>
 								</ul>
 							</li>
 							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title">Контакты</a>
+								<a class="header__nav-link header__nav-title" href="#contacts">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -162,7 +162,7 @@
     </section>
 
     <main>
-      <section class="about" data-test="about">
+      <section class="about" data-test="about" id="about">
         <div class="about__wrapper">
           <div class="about__container">
             <div class="about__content about__content--promo">
@@ -200,7 +200,7 @@
         </div>
       </section>
 
-      <section class="programs" data-test="programs">
+      <section class="programs" data-test="programs" id="programs">
         <div class="programs__wrapper">
           <h2 class="programs__title title">Программы</h2>
           <a class="programs__button-all button" href="#">Все программы</a>
@@ -217,7 +217,7 @@
 
             <div class="programs__swiper swiper">
               <div class="programs__slider swiper-wrapper">
-                <div class="programs__content swiper-slide">
+                <div class="programs__content swiper-slide" id="internship">
                   <div class="programs__image-wrapper">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)"  width="392" height="420" srcset="img/programs/programs-desktop1@1x.webp 1x, img/programs/programs-desktop1@2x.webp 2x">
@@ -242,7 +242,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="programs__content swiper-slide">
+                <div class="programs__content swiper-slide" id="volunteering">
                   <div class="programs__image-wrapper">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)"  width="392" height="420" srcset="img/programs/programs-desktop2@1x.webp 1x, img/programs/programs-desktop2@2x.webp 2x">
@@ -267,7 +267,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="programs__content swiper-slide">
+                <div class="programs__content swiper-slide" id="study">
                   <div class="programs__image-wrapper">
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)"  width="392" height="420" srcset="img/programs/programs-desktop3@1x.webp 1x, img/programs/programs-desktop3@2x.webp 2x">
@@ -374,7 +374,7 @@
         </div>
       </section>
 
-      <section class="grant" data-test="grant">
+      <section class="grant" data-test="grant" id="grant">
         <div class="grant__wrapper">
           <div class="grant__container">
             <h2 class="grant__title title">Как поехать</h2>
@@ -402,7 +402,7 @@
         </div>
       </section>
 
-      <section class="news" data-test="news">
+      <section class="news" data-test="news" id="news">
         <div class="news__wrapper">
           <h2 class="news__title title">Новости и материалы</h2>
           <div class="news__container">
@@ -632,7 +632,7 @@
         </div>
       </section>
 
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" data-test="reviews" id="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__container">
@@ -787,7 +787,7 @@
         </div>
       </section>
 
-      <section class="contacts" data-test="contacts">
+      <section class="contacts" data-test="contacts" id="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__container">
             <h2 class="contacts__title title">Контакты</h2>
