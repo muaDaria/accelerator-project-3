@@ -244,6 +244,7 @@
 
 .promo__pagination-bullet:focus {
   background-color: $color-secondary;
+  border: 2px solid $color-secondary;
 }
 
 .promo__pagination-bullet:active {

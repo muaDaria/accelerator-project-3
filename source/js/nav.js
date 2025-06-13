@@ -4,6 +4,12 @@ const logo = document.querySelector('.header__logo-wrapper');
 const navLinks = navList.querySelectorAll('.header__nav-link');
 const overlayElement = document.querySelector('.overlay');
 
+function onEscapePress(event) {
+  if (event.key === 'Escape') {
+    toggleNav();
+  }
+}
+
 function toggleNav() {
   const isOpen = navList.classList.toggle('header__nav-list--open');
   navToggle.classList.toggle('header__toggle--open', isOpen);
@@ -17,6 +23,12 @@ function toggleNav() {
       link.addEventListener('click', toggleNav);
     }
   });
+
+  if (isOpen) {
+    document.addEventListener('keydown', onEscapePress);
+  } else {
+    document.removeEventListener('keydown', onEscapePress);
+  }
 }
 
 function toggleSublist(evt) {
