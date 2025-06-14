@@ -93,10 +93,6 @@
   width: 100%;
   height: auto;
   background-color: $color-base-white;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .programs__buttons {
@@ -110,9 +106,6 @@
   @media (min-width: $tablet-width) {
     top: 461px;
     right: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -353,12 +346,28 @@
 
 .programs__button-more:hover {
   outline: none;
-  background-color: $color-background;
+  background-color: $color-secondary;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before{
+    background-color: $color-background;
+  }
 }
 
 .programs__button-more:active {
   outline: none;
-  background-color: $color-background;
+  background-color: $color-secondary;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before{
+    background-color: $color-background;
+  }
 }
 
 .programs__button-more[disabled] {

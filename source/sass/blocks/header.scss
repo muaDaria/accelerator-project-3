@@ -181,7 +181,7 @@
 
 .header__nav-list--open {
 	visibility: visible;
-	padding: 35px 125px 35px 25px;
+	padding: 35px 25px;
 	width: 290px;
 	line-height: 1;
 	row-gap: 28px;
@@ -261,6 +261,7 @@
 .header__nav-link:focus,
 .header__nav-title:active {
   opacity: 1;
+  outline: none;
 }
 
 .header__nav-title:disabled,

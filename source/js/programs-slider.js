@@ -42,6 +42,7 @@ const initSliderPrograms = () => {
       1440: {
         slidesPerView: 3,
         spaceBetween: 32,
+        allowTouchMove: false,
       }
     }
   });
