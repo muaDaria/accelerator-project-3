@@ -104,8 +104,9 @@
   right: 0;
 
   @media (min-width: $tablet-width) {
-    top: 461px;
+    top: auto;
     right: 2px;
+    bottom: -64px;
   }
 }
 

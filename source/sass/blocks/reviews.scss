@@ -40,12 +40,9 @@
   right: 0;
 
   @media (min-width: $tablet-width) {
-    top: 461px;
+    top: auto;
     right: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 523px;
+    bottom: -64px
   }
 }
 
@@ -220,10 +217,12 @@
   }
 }
 
+
 .reviews__name p {
   margin: 0;
   line-height: 18px;
   color: $color-secondary;
+  width: 186px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -233,13 +232,16 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    width: 132px;
+    width: 122px;
+    max-width: 122px;
+    padding-right: 10px;
   }
 }
 
 .reviews__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 
   @media (min-width: $tablet-width) {
@@ -251,9 +253,11 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 115px;
 
   @media (min-width: $tablet-width) {
     gap: 10px;
+    max-width: max-content;
   }
 
   @media (min-width: $desktop-width) {

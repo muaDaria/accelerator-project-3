@@ -42,6 +42,7 @@ const initSliderReviews = () => {
       1440: {
         slidesPerView: 'auto',
         spaceBetween: 32,
+        allowTouchMove: false,
       }
     }
   });

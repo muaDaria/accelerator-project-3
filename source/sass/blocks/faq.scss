@@ -227,11 +227,6 @@
   }
 }
 
-/*.faq__questions-item[open] .faq__summary:hover,
-.faq__questions-item[open] .faq__summary:focus {
-  background-color: $color-secondary;
-}*/
-
 .faq__questions-item[open]:has(.faq__summary:focus),
 .faq__questions-item[open]:has(.faq__summary:hover) {
   background-color: $color-secondary;
