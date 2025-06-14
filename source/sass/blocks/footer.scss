@@ -200,6 +200,7 @@
 .footer__link:focus,
 .footer__privacy-policy:focus {
   color: $color-secondary;
+  outline: none;
 
   &::after {
     background-color: $color-secondary;

@@ -144,7 +144,7 @@
   color: $color-background;
   background-color: transparent;
 
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
   scrollbar-color: $color-background transparent;
 
   &::-webkit-scrollbar {
@@ -367,10 +367,6 @@
     width: 352px;
     margin-top: 20px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .form__button:hover {
@@ -432,6 +428,18 @@
   border: 1px solid $color-background;
 }
 
+.form__content:has(.form__field:focus) .form__label,
+.form__content:has(.form__field:hover) .form__label,
+.form__content:has(.form__field:active) .form__label,
+.form__content:has(.form__text:focus) .form__label,
+.form__content:has(.form__text:hover) .form__label,
+.form__content:has(.form__text:active) .form__label,
+.form__content:has(.ss-main:focus) .form__label,
+.form__content:has(.ss-main:active) .form__label,
+.form__content:has(.ss-main:hover) .form__label {
+  opacity: 1;
+}
+
 .form__field:focus,
 .form__text:focus {
   border: 1px solid $color-background;
@@ -439,18 +447,35 @@
   background-color: transparent;
 }
 
-.form__field:disabled {
+.form__field:disabled,
+.form__text:disabled,
+.ss-main.disabled {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  cursor: default;
+}
+
+.form__content:has(.form__field:disabled) .form__label,
+.form__content:has(.form__text:disabled) .form__label,
+.form__content:has(.ss-main.disabled) .form__label {
+  opacity: 0.6;
 }
 
 
 //form--modal
 .form--modal .form__title {
+  padding: 0;
   line-height: 18px;
   color: $color-secondary;
   text-align: center;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 100%;
+  }
 }
 
 .form--modal .form__description {
@@ -458,14 +483,27 @@
   margin-bottom: 25px;
   width: 220px;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .form--modal .form__group {
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form--modal .form__content {
   gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 12px;
+  }
 }
 
 .form--modal .form__label {
@@ -493,6 +531,16 @@
 .form--modal .form__content--agreement {
   grid-template-columns: 20px 230px;
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 20px 320px;
+  }
+}
+
+.form--modal .form__content--agreement .form__label {
+  @media (min-width: $tablet-width) {
+    line-height: 12px;
+  }
 }
 
 .form--modal .form__control {
@@ -511,4 +559,173 @@
   &::before {
     background-color: $color-background;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    width: 184px;
+    align-self: center;
+  }
+}
+
+.form--modal .ss-main {
+  padding: 14px 25px;
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  width: 100%;
+
+  &::after {
+    width: 14px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-arrow-down-view");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: $color-base-black;
+  }
+}
+
+.form--modal .ss-single {
+  color: $color-base-black;
+}
+
+.form__select-open.ss-open-above {
+  transform: translateY(-5px) scaleY(1);
+  transform-origin: top center;
+}
+
+.form--modal .ss-main:hover {
+  border: 1px solid $color-base-black;
+}
+
+.form--modal .ss-main:focus,
+.form--modal .ss-main:active {
+  box-shadow: none;
+  border: 1px solid $color-base-black;
+}
+
+.form--modal input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px $color-background inset;
+}
+
+.form--modal .form__field:hover,
+.form--modal .form__field:active {
+  border: 1px solid $color-base-black;
+}
+
+.form--modal .form__field:focus {
+  border: 1px solid $color-base-black;
+  outline: none;
+  background-color: transparent;
+}
+
+.form--modal .form__field:disabled {
+  border: 1px solid rgba(169, 175, 183, 0.5);
+  background-color: rgba(169, 175, 183, 0.2);
+}
+
+.form--modal .form__control:hover,
+.form--modal .form__control:focus {
+  outline: 1px solid $color-secondary;
+  background-color: $color-background;
+}
+
+.form--modal .form__control:disabled {
+  background-color: $color-disabled;
+}
+
+.form--modal .form__control:checked {
+  background-color: $color-secondary;
+  outline: 1px solid $color-background;
+
+  &::before {
+    background-color: $color-background;
+    mask-size: 16px 12px;
+    top: 0;
+  }
+}
+
+.form--modal .form__control:checked:hover,
+.form--modal .form__control:checked:focus {
+  background-color: $color-background;
+  outline: 1px solid $color-secondary;
+
+  &::before {
+    background-color: $color-secondary;
+    mask-size: 16px 12px;
+    top: 0;
+  }
+}
+
+.form--modal .form__control:checked:disabled {
+  background-color: $color-disabled;
+  outline: none;
+
+  &::before {
+    background-color: $color-background;
+  }
+}
+
+.form--modal .form__button:hover {
+  outline: none;
+  color: $color-background;
+  background-color: $color-secondary;
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+  }
+}
+
+.form--modal .form__button:active{
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: $color-secondary;
+
+  &::after {
+    background-color: $color-background;
+  }
+
+  &::before {
+    background-color: $color-secondary;
+    opacity: 0.7;
+  }
+}
+
+.form--modal .form__button:focus {
+  outline: 1px solid $color-secondary;
+  color: $color-secondary;
+  background-color: $color-background;
+
+  &::after {
+    background-color: $color-secondary;
+  }
+
+  &::before {
+    background-color: $color-background;
+  }
+}
+
+.form--modal .form__button:disabled {
+  outline: 1px solid $color-disabled;
+  color: $color-disabled;
+  background-color: transparent;
+  cursor: default;
+
+  &::after {
+    background-color: $color-disabled;
+  }
+
+  &::before {
+    background-color: $color-background;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.form--modal .form__field.form__error,
+.form--modal .form__control.form__error {
+  border: 1px solid $color-error;
+  outline: none;
+  background-color: rgba(255, 94, 102, 0.2);
 }

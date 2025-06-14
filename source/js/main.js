@@ -1,13 +1,10 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
 import './nav.js';
 import './promo-slider.js';
 import './programs-slider.js';
 import './news-slider.js';
 import './reviews-slider.js';
 import './form-select.js';
-import './form-validation.js';
+import './form-validate.js';
 import './footer-tab.js';
+import './modal.js';
+import './modal-validate.js';

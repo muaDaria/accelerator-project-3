@@ -923,7 +923,7 @@
       </div>
     </footer>
 
-    <section class="modal">
+   <section class="modal modal--close">
       <div class="modal__wrapper">
       <button class="modal__button" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -931,18 +931,18 @@
         <section class="modal__form form form--modal">
           <h2 class="form__title title">Напишите нам</h2>
           <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-            <form class="form__group" action="https://echo.htmlacademy.ru" method="post" novalidate>
+            <form class="form__group form__group--modal" action="https://echo.htmlacademy.ru" method="post" novalidate>
               <div class="form__content">
                 <label class="form__label" for="name">Имя</label>
-                  <input class="form__field form__field--name" type="text" id="name" name="name" required>
+                  <input class="form__field form__field--modal form__field--name" type="text" id="name" name="name" required>
               </div>
               <div class="form__content">
                 <label class="form__label" for="phone">Телефон</label>
-                  <input class="form__field form__field--phone" type="tel" id="phone" name="phone" required>
+                  <input class="form__field form__field--modal form__field--phone" type="tel" id="phone" name="phone" required>
               </div>
               <div class="form__content">
                 <label class="form__label" for="city-select">Выберите город</label>
-                <select name="city" id="city-select" required>
+                <select name="city" id="city-select--modal" required>
                   <option label=" "></option>
                   <option value="petersburg">Санкт-Петербург</option>
                   <option value="petersburg">Санкт-Петербург</option>
@@ -952,7 +952,7 @@
               </div>
               <div class="form__content form__content--agreement">
                 <label class="form__label" for="agreement">Я согласен на обработку моих персональных <br>данных</label>
-                <input class="form__control" type="checkbox" id="agreement" name="agreement" required>
+                <input class="form__control form__control--modal" type="checkbox" id="agreement" name="agreement" required>
               </div>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
