@@ -1,5 +1,6 @@
+
 import Swiper from 'swiper';
-import {Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Scrollbar } from 'swiper/modules';
 
 const initSliderPrograms = () => {
@@ -8,7 +9,9 @@ const initSliderPrograms = () => {
     return;
   }
 
-  new Swiper('.programs__swiper',{
+  const buttonAll = document.querySelector('.programs__button-all'); // кнопка выхода из слайдера
+
+  const swiper = new Swiper('.programs__swiper', {
     modules: [Navigation, Scrollbar],
 
     direction: 'horizontal',
@@ -43,6 +46,42 @@ const initSliderPrograms = () => {
         slidesPerView: 3,
         spaceBetween: 32,
         allowTouchMove: false,
+      }
+    },
+
+    on: {
+      slideChange() {
+        this.slides.forEach((slide, index) => {
+          const isActive = index === this.activeIndex;
+          slide.querySelectorAll('a, button, input, textarea, select, [tabindex]')
+            .forEach((el) => {
+              el.tabIndex = isActive ? 0 : -1;
+            });
+        });
+      },
+
+      init() {
+        this.slides.forEach((slide, index) => {
+          const isActive = index === this.activeIndex;
+          slide.querySelectorAll('a, button, input, textarea, select, [tabindex]')
+            .forEach((el) => {
+              el.tabIndex = isActive ? 0 : -1;
+            });
+        });
+      }
+    },
+  });
+
+
+  sliderElement.addEventListener('focusin', (evt) => {
+    const focusedElement = evt.target;
+
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    if (!activeSlide.contains(focusedElement)) {
+      if (buttonAll) {
+        buttonAll.focus();
+      } else {
+        focusedElement.blur();
       }
     }
   });
