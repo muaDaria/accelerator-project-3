@@ -62,7 +62,7 @@
   }
 }
 
-.faq__questions-item summary {
+.faq__summary {
   display: flex;
   flex-wrap: wrap;
   gap: 29px;
@@ -159,10 +159,11 @@
   color: $color-base-white;
 }
 
-.faq__questions-item summary:hover .faq__button,
-.faq__questions-item summary:focus .faq__button {
+.faq__summary:hover .faq__button,
+.faq__summary:focus .faq__button {
   background-color: transparent;
   outline: 1px solid $color-secondary;
+  border: none;
 
   &::after,
   &::before {
@@ -170,7 +171,7 @@
   }
 }
 
-.faq__questions-item summary:active .faq__button  {
+.faq__summary:active .faq__button  {
   background-color: $color-active;
 
   &::after,
@@ -179,21 +180,17 @@
   }
 }
 
-.faq__questions-item:hover,
-.faq__questions-item:focus,
-.faq__questions-item:focus-visible {
+.faq__questions-item:has(.faq__summary:focus),
+.faq__questions-item:has(.faq__summary:hover),
+.faq__questions-item:has(.faq__summary:active)  {
   background-color: $color-background;
 }
 
-.faq__questions-item:active {
-  background-color: $color-background;
-}
-
-.faq__questions-item:active summary {
+.faq__summary:active {
   color: $color-active;
 }
 
-.faq__questions-item[open] summary {
+.faq__questions-item[open] .faq__summary {
   margin-bottom: 20px;
 }
 
@@ -210,8 +207,8 @@
   }
 }
 
-.faq__questions-item[open] summary:hover .faq__button,
-.faq__questions-item[open] summary:focus .faq__button {
+.faq__questions-item[open] .faq__summary:hover .faq__button,
+.faq__questions-item[open] .faq__summary:focus .faq__button {
   background-color: transparent;
   outline: 1px solid $color-background;
 
@@ -221,7 +218,7 @@
   }
 }
 
-.faq__questions-item[open] summary:active .faq__button {
+.faq__questions-item[open] .faq__summary:active .faq__button {
   background-color: $color-active;
 
   &::after {
@@ -230,13 +227,24 @@
   }
 }
 
-.faq__questions-item[open]:hover,
-.faq__questions-item[open]:focus {
+/*.faq__questions-item[open] .faq__summary:hover,
+.faq__questions-item[open] .faq__summary:focus {
+  background-color: $color-secondary;
+}*/
+
+.faq__questions-item[open]:has(.faq__summary:focus),
+.faq__questions-item[open]:has(.faq__summary:hover) {
   background-color: $color-secondary;
 }
 
-.faq__questions-item[open]:active {
+.faq__questions-item[open]:has(.faq__summary:active) {
   background-color: $color-active;
+}
+
+.faq__questions-item[disabled] {
+  background-color: $color-disabled;
+  outline: none;
+  cursor: default;
 }
 
 .faq__questions-item .faq__button[disabled] {
