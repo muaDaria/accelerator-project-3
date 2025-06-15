@@ -405,10 +405,8 @@
       <section class="news" data-test="news" id="news">
         <div class="news__wrapper">
           <h2 class="news__title title">Новости и материалы</h2>
-          <div class="news__container">
-
             <ul class="news__filter-list">
-              <li class="news__filter-item news__filter-item">
+              <li class="news__filter-item">
                 <button class="news__filter-button news__filter-button--active button" type="button">Общее</button>
               </li>
               <li class="news__filter-item">
@@ -425,145 +423,407 @@
               </li>
             </ul>
 
+          <div class="news__container">
             <div class="news__swiper swiper">
               <div class="news__slider swiper-wrapper">
-                <div class="news__content swiper-slide">
-                  <div class="news__wrapper-slide">
-                    <div class="news__nebo-container nebo nebo--bl">
-                      <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
-                        <picture>
-                          <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
-                          <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
-                          <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
-                          <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
-                          <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
-                          <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-                        </picture>
-                      </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
                     </div>
-                    <div class="news__description">
-                      <div class="news__nebo news__nebo--date nebo nebo--tr">
-                        <time class="news__date" datetime="2023-03-23">23/03/2023</time>
-                      </div>
-                      <div class="news__nebo news__nebo--name nebo nebo--tr">
-                        <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
-                        </div>
-                      <div class="news__nebo news__nebo--text">
-                        <div class="news__text-wrapper">
-                          <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                        </div>
-                        <a class="news__buttom-more button" href="#">
-                          <span class="visually-hidden">Подробнее</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news__content swiper-slide">
-                  <div class="news__wrapper-slide">
-                  <div class="news__nebo-container nebo nebo--bl">
-                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
-                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
-                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
-                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
-                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="news__description">
-                    <div class="news__nebo news__nebo--date nebo nebo--tr">
-                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
-                    </div>
-                    <div class="news__nebo news__nebo--name nebo nebo--tr">
-                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
-                      </div>
-                    <div class="news__nebo news__nebo--text">
-                      <div class="news__text-wrapper">
-                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                      </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
                       <a class="news__buttom-more button" href="#">
                         <span class="visually-hidden">Подробнее</span>
                       </a>
                     </div>
-                  </div>
                   </div>
                 </div>
 
-                <div class="news__content swiper-slide">
-                  <div class="news__wrapper-slide">
-                  <div class="news__nebo-container nebo nebo--bl">
-                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
-                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
-                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
-                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
-                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-                      </picture>
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
                     </div>
-                  </div>
-                  <div class="news__description">
-                    <div class="news__nebo news__nebo--date nebo nebo--tr">
-                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
-                    </div>
-                    <div class="news__nebo news__nebo--name nebo nebo--tr">
-                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
-                      </div>
-                    <div class="news__nebo news__nebo--text">
-                      <div class="news__text-wrapper">
-                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                      </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
                       <a class="news__buttom-more button" href="#">
                         <span class="visually-hidden">Подробнее</span>
                       </a>
                     </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="news__content swiper-slide">
-                  <div class="news__wrapper-slide">
-                  <div class="news__nebo-container nebo nebo--bl">
-                    <div class="news__image-wrapper news__nebo news__nebo--image nebo nebo--bl">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)"  width="286" height="400" srcset="img/news/news-desktop1@1x.webp 1x, img/news/news-desktop1@2x.webp 2x">
-                        <source type="image/webp" media="(min-width: 768px)" width="324" height="350" srcset="img/rnews/news-tablet1@1x.webp 1x, img/news/news-tablet1@2x.webp 2x">
-                        <source type="image/webp"  width="290" height="330" srcset="img/news/news-mobile1@1x.webp 1x, img/news/news-mobile1@2x.webp 2x">
-                        <source media="(min-width: 1440px)" width="286" height="400" type="image/jpeg" srcset="img/news/news-desktop1@1x.jpg 1x, img/news/news-desctop1@2x.jpg 2x">
-                        <source media="(min-width: 768px)" width="324" height="350" type="image/jpeg" srcset="img/news/news-tablet1@1x.jpg 1x, img/news/news-tablet1@2x.jpg 2x">
-                        <img src="img/news/news-mobile1@1x.jpg" width="290" height="330" srcset="imgnews/news-mobile1@2x.jpg 2x" alt="Мужчина с бородой и в очках сидит на фоне снежных гор">
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="news__description">
-                    <div class="news__nebo news__nebo--date nebo nebo--tr">
-                      <time class="news__date" datetime="2023-03-23">23/03/2023</time>
-                    </div>
-                    <div class="news__nebo news__nebo--name nebo nebo--tr">
-                      <h3 class="news__name title">Интервью с участницей программы стажировки</h3>
-                      </div>
-                    <div class="news__nebo news__nebo--text">
-                      <div class="news__text-wrapper">
-                        <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
-                      </div>
-                      <a class="news__buttom-more button" href="#">
-                        <span class="visually-hidden">Подробнее</span>
-                      </a>
-                    </div>
-                  </div>
                   </div>
                 </div>
 
-              <div class="news__pagination swiper-pagination">
-                <button class="news__pagination-arrow news__pagination-arrow-prev button" aria-label="Предыдущий слайд" type="button">←</button>
-                <div class="news__pagination-numbers"></div>
-                <button class="news__pagination-arrow news__pagination-arrow-next button" aria-label="Следующий слайд" type="button">→</button>
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--interview">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-23">23/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Интервью с участницей программы стажировки</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--travelling">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-20">20/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Путешествуем по миру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--volunteering">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-17">17/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Новая программа волонтёрства</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news__content news__content--career">
+                  <div class="news__description nebo nebo--tr">
+                    <span class="news__angle nebo nebo--tr"></span>
+                    <time class="news__date nebo nebo--tr" datetime="2023-03-10">10/03/2023</time>
+                    <div class="news__nebo-subtitle nebo nebo--tr">
+                      <h3 class="news__subtitle title">Построй свою карьеру</h3>
+                    </div>
+                    <div class="news__nebo-text nebo nebo--tr">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__buttom-more button" href="#">
+                        <span class="visually-hidden">Подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-
             </div>
+
+            <div class="news__buttons">
+              <button class="news__button news__button-prev button swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд"</span>
+              </button>
+              <div class="news__pagination swiper-pagination"></div>
+              <button class="news__button news__button-next button swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
+
           </div>
         </div>
       </section>

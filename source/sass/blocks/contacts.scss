@@ -74,10 +74,6 @@
   @media (min-width: $tablet-width) {
     gap: 24px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .contacts__name {
@@ -89,15 +85,6 @@
   color: $color-base-white;
   opacity: 0.8;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-    //font-size: 18px;
-
-  }
 }
 
 .contacts__address {
@@ -114,16 +101,6 @@
   margin: 0;
   font-style: normal;
   color: $color-background;
-
-  @media (min-width: $tablet-width) {
-    //line-height: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //font-size: 16px;
-    //line-height: 24px;
-
-  }
 }
 
 .contacts__link {
@@ -165,6 +142,7 @@
 .contacts__link:focus {
   text-decoration: underline;
   color: $color-base-black;
+  opacity: none;
 }
 
 .contacts__link:active {
