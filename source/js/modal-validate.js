@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const fieldName = form.querySelector('.form__field--modal.form__field--name');
   const fieldPhone = form.querySelector('.form__field--modal.form__field--phone');
-  const fieldSelect = form.querySelector('#city-select--modal');
+  const fieldSelect = form.querySelector('#city-select-modal');
   const selectWrapper = fieldSelect.closest('.ss-main');
   const fieldAgreement = form.querySelector('.form__control--modal');
 

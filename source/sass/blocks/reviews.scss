@@ -1,9 +1,10 @@
 .reviews {
-  overflow: hidden
+  overflow: hidden;
 }
 
 .reviews__wrapper {
   @include wrapper-size;
+
   padding: 50px 15px;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +43,7 @@
   @media (min-width: $tablet-width) {
     top: auto;
     right: 2px;
-    bottom: -64px
+    bottom: -64px;
   }
 }
 
@@ -160,7 +161,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 51px 50px 50px 50px;
+    padding: 51px 50px 50px;
     width: 560px;
   }
 
@@ -240,6 +241,7 @@
 
 .reviews__list {
   @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
   gap: 25px;

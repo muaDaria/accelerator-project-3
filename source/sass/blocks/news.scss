@@ -1,5 +1,5 @@
 .news__wrapper {
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 51px 0;
 
   @media (min-width: $tablet-width) {
@@ -31,6 +31,7 @@
 
 .news__filter-list {
   @include list-reset;
+
   margin: 0 auto;
   padding-left: 15px;
   display: flex;
@@ -113,7 +114,7 @@
 }
 
 
-.news__filter-button:active  {
+.news__filter-button:active {
   outline: 2px solid $color-secondary;
   opacity: 1;
   outline-offset: -2px;
@@ -124,7 +125,7 @@
   }
 }
 
-.news__filter-button--active:active  {
+.news__filter-button--active:active {
   outline: 2px solid $color-secondary;
   opacity: 1;
   outline-offset: -2px;
@@ -235,12 +236,14 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+
     --nb-w: 213px;
     --nb-h: -2px;
   }
 
   @media (min-width: $desktop-width) {
     width: 286px;
+
     --nb-w: 180px;
   }
 }
@@ -252,7 +255,7 @@
 
   --nb-w: -20px;
   --nb-h: -2px;
-  --nb-r: 22px
+  --nb-r: 22px;
 }
 
 .news__date {
@@ -261,14 +264,17 @@
   line-height: 100%;
   letter-spacing: 0.12px;
   color: $color-secondary;
-  //max-width: 90px;
+
+  // max-width: 90px;
   background-color: $color-base-white;
+
   --nb-r: 15px;
   --nb-w: 164px;
   --nb-h: 0px;
 
   @media (min-width: $tablet-width) {
     padding: 13px 12px 5px 0;
+
     --nb-r: 13px;
     --nb-w: 204px;
     --nb-h: 4px;
@@ -276,6 +282,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 13px 12px 5px 0;
+
     --nb-w: 165px;
   }
 }
@@ -284,18 +291,20 @@
   --nb-r: 15px;
   --nb-w: 44px;
   --nb-h: 20px;
-  //min-height: 50px;
+
+  // min-height: 50px;
 
   @media (min-width: $tablet-width) {
-    //min-height: 38px;
+    // min-height: 38px;
     --nb-r: 12px;
     --nb-w: 77px;
     --nb-h: 86px;
   }
 
   @media (min-width: $desktop-width) {
-    //min-height: 42px;
+    // min-height: 42px;
     width: 280px;
+
     --nb-r: 26px;
     --nb-w: 26px;
   }
@@ -307,12 +316,14 @@
   padding: 10px 18px 4px 0;
   border-radius: 0 16px 0 0;
   background-color: $color-base-white;
-  //max-width: 216px;
+
+  // max-width: 216px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    //max-width: 185px;
+
+    // max-width: 185px;
     width: 219px;
     padding: 11px 18px 3px 0;
   }
@@ -322,7 +333,8 @@
     line-height: 26px;
     width: 203px;
     padding: 10px 18px 4px 0;
-    //max-width: 210px;
+
+    // max-width: 210px;
   }
 }
 
@@ -332,6 +344,7 @@
   flex-wrap: wrap;
   gap: 10px;
   background-color: $color-base-white;
+
   // margin-top: -9px;
   border-radius: 0 16px 0 0;
   padding: 12px 11px 5px 0;
@@ -343,12 +356,14 @@
   @media (min-width: $tablet-width) {
     padding: 14px 10px 10px 0;
     gap: 16px;
+
     --nb-w: 40px;
     --nb-h: 81px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 12px 10px 10px 0;
+
     --nb-w: 0px;
     --nb-h: 35px;
     --nb-r: 15px;
@@ -369,7 +384,8 @@
 
   @media (min-width: $desktop-width) {
     line-height: 18px;
-    //max-width: 180px;
+
+    // max-width: 180px;
   }
 }
 
@@ -380,6 +396,7 @@
 
     .news__description {
       width: 604px;
+
       --nb-w: 493px;
     }
 
@@ -403,7 +420,8 @@
 
     .news__nebo-text {
       width: 479px;
-      //gap: 12px;
+
+      // gap: 12px;
       --nb-w: -17px;
       --nb-h: 35px;
       --nb-r: 14px;
@@ -457,7 +475,7 @@
   }
 }
 
-//news__content--interview
+// news__content--interview
 
 .news__content--interview {
   display: flex;
@@ -504,7 +522,7 @@
   }
 }
 
-//news__content--travelling
+// news__content--travelling
 
 .news__content--travelling {
   display: flex;
@@ -574,7 +592,7 @@
   }
 }
 
-//news__content--volunteering
+// news__content--volunteering
 
 .news__content--volunteering {
   display: flex;
@@ -658,7 +676,7 @@
   }
 }
 
-//news__content--career
+// news__content--career
 
 .news__content--career {
   display: flex;
@@ -666,7 +684,7 @@
     image-set(
       url("../../img/news/news-tablet4@1x.webp") 1x type("image/webp"),
       url("../../img/news/news-tablet4@2x.webp") 2x type("image/webp"),
-       url("../../img/news/news-tablet4@1x.jpg") 1x type("image/jpeg"),
+      url("../../img/news/news-tablet4@1x.jpg") 1x type("image/jpeg"),
       url("../../img/news/news-tablet4@2x.jpg") 2x type("image/jpeg")
     );
 }
@@ -699,7 +717,7 @@
   }
 }
 
- .news__buttons {
+.news__buttons {
   display: flex;
   width: 290px;
   justify-content: space-between;

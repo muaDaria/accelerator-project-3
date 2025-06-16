@@ -64,7 +64,7 @@ window.SlimSelect.prototype.init = function (...args) {
 
 const initModalSelect = () => {
   if (!modalSlimSelectInstance) {
-    const selectElement = modal.querySelector('#city-select--modal');
+    const selectElement = modal.querySelector('#city-select-modal');
     if (!selectElement) {
       return;
     }

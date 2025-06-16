@@ -15,7 +15,7 @@
 
   <body class="page__body">
     <div class="overlay"></div>
-    <section class="hero" data-test="hero">
+    <div class="hero" data-test="hero">
       <h1 class="visually-hidden">Internship</h1>
       <header class="hero__header header">
         <div class="header__container">
@@ -29,53 +29,53 @@
                 <a class="header__nav-link header__nav-title" href="#about">О проекте</a>
               </li>
               <li class="header__nav-item header__nav-item--dropdown">
-								<button class="header__nav-title" type="button">Программы</button>
-								<ul class="header__nav-sublist">
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#internship">Стажировки</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#volunteering">Волонтёрство</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#study">Учёба</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#programs">Религия</a>
-									</li>
-								</ul>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title" href="#grant">Как поехать</a>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title" href="#reviews">Отзывы</a>
-							</li>
-							<li class="header__nav-item header__nav-item--dropdown">
-								<button class="header__nav-title" type="button">Новости</button>
-								<ul class="header__nav-sublist">
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#news">Общее</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#news">Волонтёрство</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#news">Стажировки</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#news">Карьера</a>
-									</li>
-									<li class="header__nav-subitem">
-										<a class="header__nav-link" href="#news">Путешествия</a>
-									</li>
-								</ul>
-							</li>
-							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-title" href="#contacts">Контакты</a>
-							</li>
-						</ul>
-					</nav>
+                <button class="header__nav-title" type="button">Программы</button>
+                <ul class="header__nav-sublist">
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#internship">Стажировки</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#volunteering">Волонтёрство</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#study">Учёба</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#programs">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-title" href="#grant">Как поехать</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-title" href="#reviews">Отзывы</a>
+              </li>
+              <li class="header__nav-item header__nav-item--dropdown">
+                <button class="header__nav-title" type="button">Новости</button>
+                <ul class="header__nav-sublist">
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#news">Общее</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#news">Волонтёрство</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#news">Стажировки</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#news">Карьера</a>
+                  </li>
+                  <li class="header__nav-subitem">
+                    <a class="header__nav-link" href="#news">Путешествия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-title" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 
@@ -159,7 +159,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <main>
       <section class="about" data-test="about" id="about">
@@ -834,10 +834,8 @@
           <div class="faq__accordion">
             <details class="faq__questions-item">
               <summary class="faq__summary">
-                <div class="faq__text">
-                  <p>Кто организатор? Какие сроки у программы?</p>
-                </div>
-                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+                <span class="faq__text">Кто организатор? Какие сроки у программы?</span>
+                <span class="faq__button"></span>
               </summary>
               <div class="faq__answers">
                 <p>Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями. Сроки программы обмена могут варьироваться от одного семестра до года.</p>
@@ -845,10 +843,8 @@
             </details>
             <details class="faq__questions-item">
               <summary class="faq__summary">
-                <div class="faq__text">
-                  <p>Что такое грант на обучение?</p>
-                </div>
-                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+                <span class="faq__text">Что такое грант на обучение?</span>
+                <span class="faq__button"></span>
               </summary>
               <div class="faq__answers">
                 <p>Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
@@ -856,10 +852,8 @@
             </details>
             <details class="faq__questions-item" open>
               <summary class="faq__summary">
-                <div class="faq__text">
-                  <p>Как определяется стоимость программы?</p>
-                </div>
-                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+                <span class="faq__text">Как определяется стоимость программы?</span>
+                <span class="faq__button"></span>
               </summary>
               <div class="faq__answers">
                 <p>Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант «Стажировка»
@@ -868,10 +862,8 @@
             </details>
             <details class="faq__questions-item">
               <summary class="faq__summary">
-                <div class="faq__text">
-                  <p>Признаётся ли учёба в рамках проекта <br>для дальнейшего обучения?</p>
-                </div>
-                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+                <span class="faq__text">Признаётся ли учёба в рамках проекта <br>для дальнейшего обучения?</span>
+                <span class="faq__button"></span>
               </summary>
               <div class="faq__answers">
                 <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
@@ -879,10 +871,8 @@
             </details>
             <details class="faq__questions-item">
               <summary class="faq__summary">
-                <div class="faq__text">
-                  <p>Как выглядит полный процесс регистрации на программу «Стажировка»?</p>
-                </div>
-                <span class="faq__button" aria-label="Открыть" tabindex="0"></span>
+                <span class="faq__text">Как выглядит полный процесс регистрации на программу «Стажировка»?</span>
+                <span class="faq__button"></span>
               </summary>
               <div class="faq__answers">
                 <p>Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена, общение с координатором программы, заполнение заявления и предоставление необходимых документов, прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.</p>
@@ -1183,26 +1173,26 @@
       </div>
     </footer>
 
-   <section class="modal modal--close">
+    <section class="modal modal--close">
       <div class="modal__wrapper">
-      <button class="modal__button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-        <section class="modal__form form form--modal">
+        <button class="modal__button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal__form form form--modal">
           <h2 class="form__title title">Напишите нам</h2>
           <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
             <form class="form__group form__group--modal" action="https://echo.htmlacademy.ru" method="post" novalidate>
               <div class="form__content">
-                <label class="form__label" for="name">Имя</label>
-                  <input class="form__field form__field--modal form__field--name" type="text" id="name" name="name" required>
+                <label class="form__label" for="name-modal">Имя</label>
+                <input class="form__field form__field--modal form__field--name" type="text" id="name-modal" name="name" required>
               </div>
               <div class="form__content">
-                <label class="form__label" for="phone">Телефон</label>
-                  <input class="form__field form__field--modal form__field--phone" type="tel" id="phone" name="phone" required>
+                <label class="form__label" for="phone-modal">Телефон</label>
+                  <input class="form__field form__field--modal form__field--phone" type="tel" id="phone-modal" name="phone" required>
               </div>
               <div class="form__content">
-                <label class="form__label" for="city-select">Выберите город</label>
-                <select name="city" id="city-select--modal" required>
+                <label class="form__label" for="city-select-modal">Выберите город</label>
+                <select name="city" id="city-select-modal" required>
                   <option label=" "></option>
                   <option value="petersburg">Санкт-Петербург</option>
                   <option value="petersburg">Санкт-Петербург</option>
@@ -1211,13 +1201,14 @@
                 </select>
               </div>
               <div class="form__content form__content--agreement">
-                <label class="form__label" for="agreement">Я согласен на обработку моих персональных <br>данных</label>
-                <input class="form__control form__control--modal" type="checkbox" id="agreement" name="agreement" required>
+                <label class="form__label" for="agreement-modal">Я согласен на обработку моих персональных <br>данных</label>
+                <input class="form__control form__control--modal" type="checkbox" id="agreement-modal" name="agreement" required>
               </div>
               <button class="form__button button" type="submit">Отправить</button>
             </form>
-          </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="js/main.js"></script>
   </body>
