@@ -16,10 +16,6 @@
     width: $desktop-width;
     padding: 60px 100px 40px;
     grid-template-columns: 1007px 148px;
-
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     gap: 85px;
     row-gap: 25px;
   }
@@ -84,8 +80,6 @@
 
   @media (min-width: $tablet-width) {
     gap: 15px;
-
-    // justify-content: space-between;
     align-self: center;
     width: 530px;
   }
@@ -120,8 +114,6 @@
     display: grid;
     grid-template-columns: 960px 250px;
     gap: 30px;
-
-    // order: 3;
   }
 }
 
@@ -188,8 +180,6 @@
     grid-row: 1/2;
     align-self: center;
     justify-self: end;
-
-    // order: 2;
   }
 }
 
