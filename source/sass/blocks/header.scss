@@ -52,6 +52,7 @@
 
 .header__toggle {
   padding: 19px 71px 20px 21px;
+  max-width: 210px;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.28px;
@@ -82,6 +83,7 @@
   background-color: $color-secondary;
   color: $color-background;
   align-self: auto;
+  max-width: 290px;
 
   &::after {
     background-color: $color-background;

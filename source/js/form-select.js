@@ -4,11 +4,17 @@ const addCustomizations = (wrapper) => {
   if (!wrapper || !wrapper.classList) {
     return;
   }
+
   wrapper.setAttribute('tabindex', '0');
 
   const arrow = wrapper.querySelector('.ss-arrow');
   if (arrow) {
     arrow.remove();
+  }
+
+  const content = document.querySelector('.ss-content');
+  if (content && !content.hasAttribute('aria-label')) {
+    content.setAttribute('aria-label', 'Выберите город');
   }
 };
 
@@ -19,11 +25,7 @@ const toggleSelectContentClass = (wrapper) => {
   }
 
   const expanded = wrapper.getAttribute('aria-expanded');
-  if (expanded === 'true') {
-    content.classList.add('form__select-open');
-  } else {
-    content.classList.remove('form__select-open');
-  }
+  content.classList.toggle('form__select-open', expanded === 'true');
 };
 
 const originalRender = window.SlimSelect.prototype.render;
@@ -51,6 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new MutationObserver(() => {
       toggleSelectContentClass(wrapper);
+      const content = document.querySelector('.ss-content');
+      if (content && !content.hasAttribute('aria-label')) {
+        content.setAttribute('aria-label', 'Выберите город');
+      }
     });
 
     observer.observe(wrapper, {

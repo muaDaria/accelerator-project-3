@@ -5,6 +5,5 @@ import './news-slider.js';
 import './reviews-slider.js';
 import './form-select.js';
 import './form-validate.js';
-import './footer-tab.js';
 import './modal.js';
 import './modal-validate.js';

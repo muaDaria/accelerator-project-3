@@ -56,6 +56,7 @@
     justify-content: center;
     padding: 0;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
 }
 
@@ -85,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 120px;
+   // width: 120px;
     padding: 16px 0;
   }
 }
@@ -190,6 +191,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: rgba(49, 109, 194, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 324px;

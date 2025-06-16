@@ -17,6 +17,8 @@ function toggleNav() {
   overlayElement.classList.toggle('overlay--active', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
 
+  navList.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+
   navLinks.forEach((link) => {
     link.removeEventListener('click', toggleNav);
     if (isOpen) {
